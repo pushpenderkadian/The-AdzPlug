@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 5%;
+    margin-top: -60px;
+    margin: 0 auto;
+}
+.hero .left{
+    width: 50%;
+}
+.hero .left .main{
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 27px;
+}
+.hero .left .subcon{
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 200;
+    color: #eee;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.hero .right{
+    width: 50%;
+}
+.hero .right img{
+    width: 100%;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.btst{
+    border-radius: 5px;
+    margin-right: 12px;
+    text-align: center;
+    width: 225px;
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    border: 1px solid #1adb80;
+    background: #1adb80 ;
+    color: #eee;
+    padding: 15px 36px;
+    text-transform: uppercase;
+    color: #222;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1050px){
+    .hero{
+        flex-direction: column;
+        top:20%;
+        margin-top: 0px;
+        height: auto;
+    }
+    .hero .left{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero .left .main{
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 50px;
+        margin-bottom: 27px;
+    }
+    .hero .left .subcon{
+        font-size: 17px;
+        padding-top: 10px;
+    }
+    .btns{
+        justify-content: center;
+    }
+    .hero .right{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 770px){
+    .btns{
+        flex-direction: column;
+
+    }
+    .btst{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
